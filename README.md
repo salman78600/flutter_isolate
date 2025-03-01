@@ -4,13 +4,29 @@ A new Flutter project.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+# Overview
 
-A few resources to get you started if this is your first Flutter project:
+This Flutter project demonstrates the usage of Isolates to perform heavy computations without blocking the UI.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Flutter runs code in a single-threaded environment by default, meaning expensive operations can freeze the UI. To solve this, Isolates allow running computations in a separate memory space, ensuring a smooth user experience.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# Features
+
+Task 1 (Blocking UI): Runs a heavy calculation synchronously on the main thread, causing the UI to freeze.
+
+Task 2 (Non-Blocking UI using Isolate): Runs the same heavy calculation in a separate Isolate, ensuring the UI remains responsive.
+
+GIF Animation: A continuously running animation to visually check if the UI is blocked.
+
+## How to Run the Project
+
+Clone the repository.
+
+Ensure you have Flutter SDK installed.
+
+# Run the following command:
+
+flutter pub get
+flutter run
+
+Observe the difference between Task 1 and Task 2.
