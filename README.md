@@ -4,8 +4,6 @@ A new Flutter project.
 
 ## Getting Started
 
-# Overview
-
 This Flutter project demonstrates the usage of Isolates to perform heavy computations without blocking the UI.
 
 Flutter runs code in a single-threaded environment by default, meaning expensive operations can freeze the UI. To solve this, Isolates allow running computations in a separate memory space, ensuring a smooth user experience.
